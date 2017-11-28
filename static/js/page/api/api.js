@@ -37,7 +37,7 @@ function updateState(state) {
     const pureVersion = version.replace(/\+$/, '');
     if (pureVersion < state.version) {
       $element.addClass('hidden');
-    } else if (pureVersion = state.version) {
+    } else if (pureVersion == state.version) {
       updateTagByKind($element, pureVersion, 'kotlin-version');
     }
   })
